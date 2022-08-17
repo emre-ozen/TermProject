@@ -6,5 +6,17 @@ namespace TermProject
         {
             InitializeComponent();
         }
+
+        public static string username="";
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+            username = "Emre";
+
+            FrmMenu frm=new FrmMenu();
+            this.Hide();
+            frm.Show();
+
+        }
     }
 }
