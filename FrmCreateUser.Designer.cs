@@ -39,12 +39,12 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errP = new System.Windows.Forms.ErrorProvider(this.components);
             this.btnNew = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnGenerate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errP)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,9 +137,9 @@
             this.txtSurname.Size = new System.Drawing.Size(170, 23);
             this.txtSurname.TabIndex = 8;
             // 
-            // errorProvider1
+            // errP
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.errP.ContainerControl = this;
             // 
             // btnNew
             // 
@@ -149,6 +149,7 @@
             this.btnNew.TabIndex = 11;
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnCreate
             // 
@@ -158,6 +159,7 @@
             this.btnCreate.TabIndex = 12;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnClose
             // 
@@ -167,6 +169,7 @@
             this.btnClose.TabIndex = 13;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnGenerate
             // 
@@ -200,7 +203,7 @@
             this.Name = "FrmCreateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create User";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +221,7 @@
         private TextBox txtName;
         private TextBox txtPassword;
         private TextBox txtSurname;
-        private ErrorProvider errorProvider1;
+        private ErrorProvider errP;
         private Button btnGenerate;
         private Button btnClose;
         private Button btnCreate;

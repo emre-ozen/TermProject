@@ -30,5 +30,19 @@ namespace TermProject
             frm.ShowDialog();
             this.Show();
         }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmChangePassword frm = new FrmChangePassword();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure?","Comfirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
+              Application.Exit();
+        }
     }
 }
