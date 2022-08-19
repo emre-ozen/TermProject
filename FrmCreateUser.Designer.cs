@@ -203,6 +203,7 @@
             this.Name = "FrmCreateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Create User";
+            this.Load += new System.EventHandler(this.FrmCreateUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

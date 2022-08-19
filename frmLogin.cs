@@ -23,7 +23,7 @@ namespace TermProject
         public static string username="";
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            
             if (txtUsername.Text.Trim().Length < 3)
             {
                 errP.SetError(txtUsername, "Check username!");
@@ -73,9 +73,10 @@ namespace TermProject
             catch (Exception exp)
             {
                 MessageBox.Show(exp.Message);
+                return;
             }
 
-
+            
             username = txtUsername.Text;
 
             FrmMenu frm=new FrmMenu();

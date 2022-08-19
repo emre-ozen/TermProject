@@ -44,5 +44,13 @@ namespace TermProject
             if (MessageBox.Show("Are you sure?","Comfirmation",MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
               Application.Exit();
         }
+
+        private void listUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmlistUsers frm = new frmlistUsers();
+            this.Hide();
+            frm.ShowDialog();
+            this.Show();
+        }
     }
 }

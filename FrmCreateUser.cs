@@ -144,5 +144,10 @@ namespace TermProject
 
 
         }
+
+        private void FrmCreateUser_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
