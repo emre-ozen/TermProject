@@ -75,8 +75,8 @@ namespace TermProject
                 MessageBox.Show(exp.Message);
                 return;
             }
-
             
+
             username = txtUsername.Text;
 
             FrmMenu frm=new FrmMenu();

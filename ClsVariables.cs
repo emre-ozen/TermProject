@@ -8,7 +8,7 @@ namespace TermProject
 {
     internal class ClsVariables
     {
-        public static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\emre.ozen\Source\Repos\TermProject\Stock.mdf;Integrated Security=True";
+        public static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\emreo\source\repos\TermProjectFinal\Stock.mdf;Integrated Security=True";
 
     }
 }

@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dGWUsers = new System.Windows.Forms.DataGridView();
-            this.clUsername = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clPassword = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.lblUserCount = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -42,40 +38,12 @@
             // dGWUsers
             // 
             this.dGWUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGWUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clUsername,
-            this.clName,
-            this.clSurname,
-            this.clPassword});
             this.dGWUsers.Location = new System.Drawing.Point(12, 12);
             this.dGWUsers.Name = "dGWUsers";
             this.dGWUsers.RowTemplate.Height = 25;
             this.dGWUsers.Size = new System.Drawing.Size(776, 378);
             this.dGWUsers.TabIndex = 0;
-            // 
-            // clUsername
-            // 
-            this.clUsername.HeaderText = "User Name";
-            this.clUsername.Name = "clUsername";
-            this.clUsername.ReadOnly = true;
-            // 
-            // clName
-            // 
-            this.clName.HeaderText = "Name";
-            this.clName.Name = "clName";
-            this.clName.ReadOnly = true;
-            // 
-            // clSurname
-            // 
-            this.clSurname.HeaderText = "Surname";
-            this.clSurname.Name = "clSurname";
-            this.clSurname.ReadOnly = true;
-            // 
-            // clPassword
-            // 
-            this.clPassword.HeaderText = "Password";
-            this.clPassword.Name = "clPassword";
-            this.clPassword.ReadOnly = true;
+            this.dGWUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGWUsers_CellContentClick);
             // 
             // label1
             // 
@@ -126,10 +94,6 @@
         #endregion
 
         private DataGridView dGWUsers;
-        private DataGridViewTextBoxColumn clUsername;
-        private DataGridViewTextBoxColumn clName;
-        private DataGridViewTextBoxColumn clSurname;
-        private DataGridViewTextBoxColumn clPassword;
         private Label label1;
         private Label lblUserCount;
         private Button btnClose;
