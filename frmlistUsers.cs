@@ -82,7 +82,7 @@ namespace TermProject
                     lblUserCount.Text= dtRecord.Rows.Count.ToString();
                     cnn.Close();
                 }
-            }
+            } 
             catch (Exception exp)
             {
                 MessageBox.Show(exp.Message);
